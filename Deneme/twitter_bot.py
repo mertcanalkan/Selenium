@@ -63,10 +63,8 @@ class TwitterBot:
     
     def search_user_by_username(self, username):
         try:
-            # Kullanıcının profil sayfasına gitmek için adresi oluştur
             profile_url = f"https://twitter.com/{username}"
 
-            # Kullanıcının profil sayfasına git
             self.driver.get(profile_url)
 
             print(f"{username} kullanıcısının profil sayfası başarıyla bulundu.")
